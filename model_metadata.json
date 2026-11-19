@@ -1,0 +1,79 @@
+{
+  "model_name": "Random Forest",
+  "features": [
+    "Previous_Season_Cover_Rate",
+    "Previous_Season_Bet_Count",
+    "Rolling_3Y_Cover_Rate",
+    "Rolling_3Y_Bet_Count",
+    "Team",
+    "Situation"
+  ],
+  "teams": [
+    "Arizona",
+    "Atlanta",
+    "Baltimore",
+    "Buffalo",
+    "Carolina",
+    "Chicago",
+    "Cincinnati",
+    "Cleveland",
+    "Dallas",
+    "Denver",
+    "Detroit",
+    "Green Bay",
+    "Houston",
+    "Indianapolis",
+    "Jacksonville",
+    "Kansas City",
+    "LA Chargers",
+    "LA Rams",
+    "Las Vegas",
+    "Miami",
+    "Minnesota",
+    "NY Giants",
+    "NY Jets",
+    "New England",
+    "New Orleans",
+    "Philadelphia",
+    "Pittsburgh",
+    "San Francisco",
+    "Seattle",
+    "Tampa Bay",
+    "Tennessee",
+    "Washington"
+  ],
+  "situations": [
+    "After a Loss",
+    "After a Win",
+    "All Games",
+    "As Away Team",
+    "As Favorite",
+    "As Home Team",
+    "As Home Underdog",
+    "As Underdog"
+  ],
+  "defaults": {
+    "Previous_Season_Cover_Rate": 0.5,
+    "Previous_Season_Bet_Count": 9.0,
+    "Rolling_3Y_Cover_Rate": 0.5,
+    "Rolling_3Y_Bet_Count": 18.0
+  },
+  "metrics": {
+    "accuracy": 0.5119617224880383,
+    "auc": 0.3756572541382668,
+    "brier": 0.26011757216301806,
+    "baseline_accuracy": 0.6220095693779905,
+    "train_rows": 1249,
+    "test_rows": 209
+  },
+  "break_even_rate": 0.5238095238095238,
+  "selection": "Highest 2025 accuracy and lowest Brier among notebook classifiers. Selection uses the reported test set, so these are descriptive results, not an independent estimate after model selection.",
+  "versions": {
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.1",
+    "numpy": "2.5.5",
+    "joblib": "1.6.0",
+    "streamlit": "1.67.0",
+    "openpyxl": "3.1.5"
+  }
+}
